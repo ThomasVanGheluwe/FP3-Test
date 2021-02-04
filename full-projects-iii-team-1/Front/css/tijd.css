@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    
+}
+
+main {
+    height: 100vh;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 44%, rgba(31,39,46,1) 90%, rgba(52,75,94,1) 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.imgRoadBeatles {
+    position: relative;
+    height: 100%;
+    background-image:linear-gradient(180deg, rgba(76,95,113,0) 8%, rgba(31,39,46,0) 57%, rgba(0,0,0,1) 100%)
+    ,url(/Front/img/BeatlesRoad.jpg);
+    background-size: cover;
+    filter: brightness(35%);
+    background-repeat: repeat;
+    z-index: -1;
+    
+}
+
+.main-container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.container-tijdlijn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10%;
+    position: relative;
+    align-items: center;
+    height: 100%;
+}
+
+.sub-container-button{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    height: 60%;
+    
+}
+
+.container-tijdlijn span{
+    height: 100%;
+    border-right: solid white 4px;
+    border-image: linear-gradient(
+        to bottom, 
+        white, 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
+  
+    position: absolute; 
+    overflow: hidden;
+  
+}
+
+.container-content{
+    color: white;
+    width: 90%;
+}
+
+.logo-img {
+    width: 10%;
+    margin-top: 2%;
+    transition: 500ms;
+}
+
+.logo-img:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+
+/* BUTTONS */
+.button-style{
+    font-family: 'Old Standard TT', serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: white;
+    background-color: #1f272e ;
+    z-index: 1;
+    border: solid #53bfa5 1px;
+    transition: 500ms;
+    padding-top: 7px;
+    
+}
+
+.whenclick-button{
+    background-color: #53bfa5;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: white;
+    z-index: 1;
+    border: none;
+    transition: 500ms;
+    transform: scale(1.5);
+    padding-top: 7px;
+
+}
+
+.container-tijdlijn button:hover{
+    background-color: #53bfa5;
+    
+    cursor: pointer;
+    transition: 500ms;
+    
+}
+
+.container-tijdlijn button:focus {
+    outline: none;
+}
+
+.display-none{
+
+    display: none;
+}
+
+.text-green{
+    color: #53bfa5;
+    transition: 500ms;
+}
+

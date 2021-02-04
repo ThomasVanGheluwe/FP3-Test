@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+    
+/****** ANIMATION LOADING   ********/
+
+#container-loading{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1B232B;
+    margin: 0;
+    width: auto;
+    padding: 0;
+}
+
+.loading-text {
+    font-size: 2.5em;
+    font-family: 'Old Standard TT', serif;
+    animation: lol 1s normal infinite;
+
+}
+
+
+@keyframes lol {
+    0% {
+        color: transparent;
+    }
+
+    50% {
+        color: #53bfa5;
+    }
+
+    100% {
+        color: transparent;
+    }
+}
+
+.loading-image{
+    margin-bottom: 2%;
+    width: 20%;
+    border: solid 2px white;
+}

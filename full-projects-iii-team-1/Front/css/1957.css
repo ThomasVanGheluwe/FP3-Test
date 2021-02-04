@@ -1,0 +1,116 @@
+.sub-container-content{
+    background-color: #1f272eab ;
+    width: 90%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.sub-sub-container-content1{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 4% 0% 5% 8%;
+ 
+}
+
+.sub-sub-container-content2{
+
+    width: 30%;
+    margin: 4% 8% 5% 0%;
+}
+
+.sub-sub-container-content2 iframe{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sub-sub-content1{
+    font-family: 'Old Standard TT', serif;
+    font-weight: lighter;
+    font-size: 1.5em;
+    height: 10%;
+    border-bottom: solid white 2px;
+}
+
+
+/* MAIN CONTENT */
+
+.sub-sub-content2{
+    margin-right: 10%;
+    margin-top: 4%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sub-sub-content2 p{
+
+   font-size: 0.95em;
+   line-height: 1.6em;
+}
+
+.sub-sub-content2-div2{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-sub-content2-div2 h2{
+    font-size: 1.2em;
+}
+
+.sub-sub-content2-theQuarrymen{
+    width: 30%;
+    margin-right: 20%;
+}
+
+.sub-sub-content2-theQuarrymen h2{
+    margin-bottom: 5%;
+}
+
+.sub-sub-content2-theQuarrymen p:last-child{
+    margin-top: 7%;
+}
+
+.sub-sub-content2-ask{
+    width: 50%;
+}
+
+
+.sub-sub-content2-ask ul li{
+    padding: 3% 0%;
+}
+
+.sub-sub-content2-ask ul li:first-child{
+    padding-top: 7%;
+}
+
+.sub-sub-content2-ask ul li::marker{
+    color:#53bfa5;
+}
+
+
+/* SONGS */
+
+.sub-sub-content2-div3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+}
+
+.sub-sub-content2-music1{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-sub-content2-music2{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+

@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+}
+
+/* IMG HOME BLUR EFFECT */
+.imgRoadBeatles {
+    position: relative;
+    height: 100%;
+    background-image: url(/Front/img/BeatlesRoad.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(35%);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* HEADER TITLE + BUTTON */
+.home-header-container {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-header-container h1{
+    color: white;
+    font-family: 'Old Standard TT', serif;
+    font-size: 5em;
+    transition: 500ms;
+}
+
+
+.home-header-container h2{
+    color: white;
+    font-family: 'Old Standard TT', serif;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.home-header-container button{
+    margin-top: 1.4%;
+    background-color: #53BFA5;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 30px; 
+    font-weight: 900;
+    font-size: 1.1em;
+    padding: 10px 35px ;
+    color: white;
+    transition: 500ms;
+}
+
+.home-header-container button:hover{
+    transform: scale(1.05);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.home-header-container button:focus{
+    outline: none;
+}
+
+/* DISPLAY NONE */
+.display-none{
+    display: none;
+}
+
+/* AUDIO POP-UP */
+.audio-home-containers{
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+}
+
+.enable-audio-popup{
+    border: white solid 2px;
+    border-radius: 20px;
+    padding: 2%;
+    width: 25vw;
+    
+}
+
+.enable-audio-popup h1{
+    font-family: 'Old Standard TT', serif;
+    font-size: 3em;
+    margin-bottom: 5%;
+}
+
+.enable-audio-popup p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8%;
+}
+
+.enable-audio-popup span{
+    color: #53BFA5;
+}
+
+.imgRoadBeatles-dark{
+    filter: brightness(20%);
+    transition: 1500ms;
+}
+
+.audio-container-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.audio-yes {
+    background-color: #53BFA5;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 1em;
+    padding: 10px 35px ;
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.audio-yes:focus {
+    outline: none;
+}
+
+.audio-yes:hover {
+    transform: scale(1.05);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.audio-no {
+    background-color: transparent;
+    border-style: none;
+    padding: 10px 35px;
+    transition: 500ms;
+}
+
+.audio-no:focus {
+    outline: none;
+}
+
+.audio-no span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    color: white;
+    transition: 1ms;
+}
+
+.audio-no span:hover {
+    border-bottom: solid white 2px;
+    transition: 1ms;
+    cursor: pointer;
+}
+
+
+/* BUTTON PLAY */
+
+.play-button-home{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 500ms; 
+    margin-right: 4%;
+}
+
+.play-button-home i{
+    font-size: 3em;
+    color: #53BFA5;
+    transition: 500ms;
+}
+
+.play-button-home i:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+    color: white;
+}
+
+.play-button-home:focus {
+    outline: none;
+}
+
+.breathing-button-animation {
+    animation: breathing 4s infinite;
+}
+
+@keyframes breathing {
+
+    0% {
+        transform: scale(1.0);
+    }
+
+    25%{
+        transform: scale(1.09);
+    }
+
+    50% {
+        transform: scale(1.0);
+    }
+
+    75% {
+        transform: scale(1.09);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+
+} 
+
+/* AUDIO CONTAINER */
+.container-audio-buttons{
+    margin-top: 4%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* SUB CONTAINERS */
+
+
+.container-audio-buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 25%;
+}
+
+.cover-DMC{
+    width: 20%;
+    margin-right: 4%;
+}
+
+.sub-container-slider  {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.sub-sub-container{
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+    height: 80%;
+}
+
+.sub-sub-container span{
+    display: flex;
+} 
+
+#what-music{
+    margin-left: 7%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.volumeSlider{
+    margin-left: 5%;
+}
+
+
+/* VOLUMESLIDER */
+
+.volumeSlider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 1%;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 10%;
+}
+
+.volumeSlider:hover {
+  opacity: 1;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #53bfa5;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.volumeSlider::-moz-range-thumb {
+    width: 250px;
+    height: 250px;
+    background: #53bfa5;
+    cursor: pointer;
+} 
+
+
+/* HIHLIGHT NOW PLAYING */
+
+.now-playing-green {
+    color: #53BFA5;
+    animation: opacityText 4s infinite;
+}
+
+@keyframes opacityText {
+
+    0% {
+        opacity: 100%;
+    }
+
+    25%{
+        opacity: 40%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 40%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+
+} 
+
+.cover-moving{
+    animation: text 9s linear infinite ;
+}
+
+@keyframes text {
+
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
+

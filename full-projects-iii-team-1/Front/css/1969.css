@@ -1,0 +1,175 @@
+.sub-container-1969{
+    background-color: #1f272ea9 ;
+    width: 90%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sub-sub-container-1969-1{
+   
+    margin-top: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: 'Old Standard TT', serif;
+    font-weight: lighter;
+    font-size: 1.5em;
+    border-bottom: solid white 2px;
+}
+
+.sub-sub-container-1969-2{
+      margin: 2.5% 0% 0% 8%;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      flex-direction: row;
+      font-size: 0.95em;
+      line-height: 1.6em;
+}
+
+ .sub-sub-container-1969-2 h2{
+    font-size: 1.2em;
+} 
+
+.sub-sub-1969-div1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+/* CONTENT */
+
+/* intro */
+
+.sub-sub-1969-intro{
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.sub-sub-1969-intro-text{
+    width: 60%;
+}
+
+.sub-sub-1969-intro-text h2{
+    margin-bottom: 3%;
+   
+}
+
+.sub-sub-1969-intro-img{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 2%;
+}
+
+.sub-sub-1969-intro-img img{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.sub-sub-1969-music1{
+    display: flex;
+    flex-direction: row;
+    margin: 7% 0% 9% 0%;
+}
+
+.sub-sub-1969-music2{
+    display: flex;
+    flex-direction: row;
+    margin: 7% 0% 9% 0%;
+}
+
+.sub-sub-1969-text2{
+    margin-bottom: 5%;
+}
+
+/* outro */
+
+.sub-sub-1969-outro img{
+    width: 100%;
+}
+
+.sub-sub-1969-outro-text{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30%;
+}
+
+.sub-sub-1969-outro-text1{
+    width: 50%;
+    margin-right: 2%;
+}
+
+.sub-sub-1969-outro-text h2{
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+.sub-sub-1969-text4{
+    margin-bottom: 5%;
+}
+
+.sub-sub-1969-outro-text2{
+    width: 50%;
+}
+
+
+.sub-sub-1969-outro-text2 ul li{
+    padding: 2% 0%;
+}
+    
+.sub-sub-1969-outro-text2 ul li:first-child{
+    padding-top: 5%;
+}
+
+.sub-sub-1969-outro-text2  ul li::marker{
+    color:#53bfa5;
+}
+
+/* The End */
+
+.TheEnd{
+    background: rgba(0, 0, 0, 0.377);
+    height: 70vh;
+    margin-bottom: 10%;
+}
+
+.TheEnd p{
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.TheEnd-container{
+    width: 40%;
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.TheEnd-container button{
+    margin-top: 5%;
+    background-color: #53BFA5;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 30px; 
+    font-weight: 900;
+    font-size: 1.1em;
+    padding: 10px 35px ;
+    color: white;
+    transition: 500ms;
+}
+
+.TheEnd-container button:focus{
+   outline: none;
+  
+}
+
+.TheEnd-container button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+ }
+
+

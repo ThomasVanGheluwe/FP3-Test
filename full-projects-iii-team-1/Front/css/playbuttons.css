@@ -1,0 +1,92 @@
+/* PLAYBUTTONS */
+
+.play-button-music{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 500ms; 
+    margin-right: 4%;
+}
+
+.play-button-music i{
+    font-size: 3em;
+    color: #53BFA5;
+    transition: 500ms;
+}
+
+.play-button-music i:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+    color: white;
+}
+
+.play-button-music:focus {
+    outline: none;
+}
+
+/* ANIMATION TEXT WHEN PLAYING MUSIC */
+
+.now-playing-green {
+    color: #53BFA5;
+    animation: opacityText 4s infinite;
+}
+
+@keyframes opacityText {
+
+    0% {
+        opacity: 100%;
+    }
+
+    25%{
+        opacity: 40%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 40%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+
+} 
+
+/* MUSIC TITLE */
+
+.title-bold{
+    font-weight: 800;
+}
+
+
+/* BREATHINH PLAY BUTTON ANIMATION */
+.breathing-button-animation {
+    animation: breathing 4s infinite;
+}
+
+@keyframes breathing {
+
+    0% {
+        transform: scale(1.0);
+    }
+
+    25%{
+        transform: scale(1.09);
+    }
+
+    50% {
+        transform: scale(1.0);
+    }
+
+    75% {
+        transform: scale(1.09);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+
+} 

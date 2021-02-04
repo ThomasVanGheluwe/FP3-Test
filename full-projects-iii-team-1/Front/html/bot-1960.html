@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://beatles-experience.herokuapp.com/css/bot-style.css">
+    <link rel="stylesheet" href="https://beatles-experience.herokuapp.com/css/tijd.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">
+       
+    </div>
+
+    <button id="next">Next question</button>
+
+    <script>
+        let it = document.getElementById("next");
+        let div = document.getElementById("test");
+
+        function NextQuestion(){
+           div.classList.add("display-none");
+        }
+
+        it.addEventListener('click', NextQuestion);
+    </script>
+   
+    <script type="text/javascript">
+    
+       function addVideo(path){
+            document.getElementById("test").innerHTML = ` 
+            <video class="video" src="${path}" muted autoplay controls ></video>
+            `
+            div.classList.remove("display-none");
+        }
+
+        
+        (function(d, m){
+		var kommunicateSettings = {"appId":"1279ae41c8fbf88a1ac7638214d80f43f","popupWidget":true,"automaticChatOpenOnNavigation":true,
+			"onInit": function() {
+                    Kommunicate.launchConversation(); 
+
+                    var background_loading = ".mck-loading {background-position: center; background-size: cover; background-image:url(../img/Paul-1960.jfif)!important;}"
+                    var background_eerste_laag = ".mck-box-top {display: none!important;} .mck-box-body .mck-message-inner{background-color:rgba(0,0,0,0.5)!important; height:50%; margin-top:80.5%;}"
+                    var kleur_bot =".mck-msg-left .mck-msg-box{background-color: #53b788!important;color:white!important;  } .mck-text-j .vis .mck-conversation-name {color:red!important;}" 
+                    var user_text_bubble = ".mck-msg-right .mck-msg-box{background-color: #53b788!important;}" 
+                    var background_foto_beatle = ".mck-box-content {background-image:url(../img/Paul-1960.jfif)!important; background-position: center;  background-size: cover;}"
+                    var bot_input_padding = ".mck-box-ft {padding:0; opacity:90%; background-color:black!important;}" 
+                    var bot_input_background = " .mck-box-ft .mck-box-form {border-radius: 0px!important; opacity:90%; background-color:black!important; border:none;} .mck-text-box.mck-text {background-color:black!important; color:white; } " 
+                    var bot_input_button = "#mck-btn-attach-box {display:none!important;} #send-button-wrapper{display:none!important;}"
+                    var bot_avatar = ".mck-msg-avator-bubble.mck-msg-left .mck-msg-avator {display:none!important;}"
+                    var bot_name = ".mck-conversation-name {color:white!important; margin-left:6%; margin-bottom:2%; padding:0!important; .mck-msg-right .mck-msg-box{text-align:left!important; font-size:200px;} .km-conversation-container-right {margin-left:0!important;}"
+                    var bot_answer_bubble = ".km-conversation-container-right  {margin-left:6%!important;}" 
+                    var bot_answer_delete_read_left = ".mck-msg-avator-bubble .mck-msg-left-muted  {display:none!important;}"
+                    var bot_answer_delete_read_right = ".mck-msg-avator-bubble .mck-msg-right-muted  {display:none!important;}" 
+                    var background_shadow_remove = ".mck-sidebox {box-shadow: none!important;} .mck-box{box-shadow: 0px!important;}  "
+                   
+
+                    
+
+                    
+                     Kommunicate.customizeWidgetCss(background_loading);                                                          
+                     Kommunicate.customizeWidgetCss(background_eerste_laag);
+                     Kommunicate.customizeWidgetCss(kleur_bot);
+                     Kommunicate.customizeWidgetCss(background_foto_beatle);
+                     Kommunicate.customizeWidgetCss(bot_input_padding);
+                     Kommunicate.customizeWidgetCss(bot_input_background);
+                     Kommunicate.customizeWidgetCss(bot_input_button);
+                     Kommunicate.customizeWidgetCss(bot_avatar);
+                     Kommunicate.customizeWidgetCss(bot_name);
+                     Kommunicate.customizeWidgetCss(bot_answer_bubble);
+                     Kommunicate.customizeWidgetCss(bot_answer_delete_read_left);
+                     Kommunicate.customizeWidgetCss(bot_answer_delete_read_right);
+                     Kommunicate.customizeWidgetCss(background_shadow_remove);
+                     Kommunicate.customizeWidgetCss(user_text_bubble);
+
+
+
+                    document.getElementsByClassName("mck-box-content").innerHTML += `<div class="test"></div>`
+
+                    let message = {};
+                    let localStorage = window.localStorage;
+                    let user = {};
+                
+                    user = JSON.parse(localStorage.getItem('user'));
+                     var events = {
+                        'onMessageReceived': function (resp) {
+                            message = resp.message;
+                        if(user.audio === "audioEnabled"){
+                        if(message.message == `Our friend Stuart came up with the name "The Beatals", but then we didn't like it as much and after some time we decided to call it "The Beatles". It is a play of words of Beat and Beetles.`){
+                            addVideo("https://beatles-experience.herokuapp.com/videos/1960/Paul_Beatles.mp4");
+                         
+                        }else if (message.message == "So we started with our good ol chap Tommy (Moore) but he lost some of his front teeth during a bus drive while touring. Aside of that he also didn't get along with Lennon. Then after Tommy we got Norman (Chapman), he was quite the chap alright but he had to leave for his country. Then Pete joins but he wasn't really that good, no offense Pete! But we got Ringo now, he is pretty great, maybe he will stick around." ){
+                        addVideo("https://beatles-experience.herokuapp.com/videos/1960/Paul_Drummer.mp4");
+
+                        }else if (message.message == "Yeah chap! It was quite the ride innit but unfortunately we had some trouble with the law over there. Well Georgy boy got send back to the UK because he was too young to travel , and we got send back because we were playing with fire(Arson). The folks over there sure didn't like that, well I can't blame them!" ){
+                            addVideo("https://beatles-experience.herokuapp.com/videos/1960/Paul_Hamburg.mp4");
+
+                        }else if (message.message == "Well, I'm Paul , I'm 18 years old and I'm in the band called The Beatles. where I play the bass and write songs. I love music, I love writing it and of course I love playing my instruments." ){
+                            addVideo("https://beatles-experience.herokuapp.com/videos/1960/Paul_Who.mp4");
+                        }
+                        }
+                        }
+                    };
+
+                    
+                     Kommunicate.subscribeToEvents(events);
+
+
+	    		}
+	    	};
+         	var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+          	s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+          	var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+          	window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    </script>
+     
+<script>
+    var myobj = document.getElementById("demo");
+    myobj.remove();
+</script>
+
+</body>
+</html>

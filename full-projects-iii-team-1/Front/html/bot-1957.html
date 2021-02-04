@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://beatles-experience.herokuapp.com/css/bot-style.css">
+    <link rel="stylesheet" href="https://beatles-experience.herokuapp.com/css/tijd.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">
+       
+    </div>
+
+    <button id="next">Next question</button>
+
+    <script>
+        let it = document.getElementById("next");
+        let div = document.getElementById("test");
+
+        function NextQuestion(){
+           div.classList.add("display-none");
+        }
+
+        it.addEventListener('click', NextQuestion);
+
+
+    </script>
+   
+    <script type="text/javascript">
+    
+       function addVideo(path){
+            document.getElementById("test").innerHTML = ` 
+            <video class="video" src="${path}" muted autoplay controls ></video>
+            `
+            div.classList.remove("display-none");
+        }
+
+        
+        (function(d, m){
+		var kommunicateSettings = {"appId":"2a19d866eb96aaed96213b397399b04d8","popupWidget":true,"automaticChatOpenOnNavigation":true,
+			"onInit": function() {
+                    Kommunicate.launchConversation(); 
+                    
+                    var background_loading = ".mck-loading {background-position: center; background-size: cover; background-image:url(../img/john.jpg)!important;}"
+                    var background_eerste_laag = ".mck-box-top {display: none!important;} .mck-box-body .mck-message-inner{background-color:rgba(0,0,0,0.5)!important; height:50%; margin-top:80.5%;}"
+                    var kleur_bot =".mck-msg-left .mck-msg-box{background-color: #53b788!important;color:white!important;  } .mck-text-j .vis .mck-conversation-name {color:red!important;}" 
+                    var user_text_bubble = ".mck-msg-right .mck-msg-box{background-color: #53b788!important;}" 
+                    var background_foto_beatle = ".mck-box-content {background-image:url(../img/john.jpg)!important; background-position: center; background-size: cover;}"
+                    var bot_input_padding = ".mck-box-ft {padding:0; opacity:90%; background-color:black!important;}" 
+                    var bot_input_background = " .mck-box-ft .mck-box-form {border-radius: 0px!important; opacity:90%; background-color:black!important; border:none;} .mck-text-box.mck-text {background-color:black!important; color:white; } " 
+                    var bot_input_button = "#mck-btn-attach-box {display:none!important;} #send-button-wrapper{display:none!important;}"
+                    var bot_avatar = ".mck-msg-avator-bubble.mck-msg-left .mck-msg-avator {display:none!important;}"
+                    var bot_name = ".mck-conversation-name {color:white!important; margin-left:6%; margin-bottom:2%; padding:0!important; .mck-msg-right .mck-msg-box{text-align:left!important; font-size:200px;} .km-conversation-container-right {margin-left:0!important;}"
+                    var bot_answer_bubble = ".km-conversation-container-right  {margin-left:6%!important;}" 
+                    var bot_answer_delete_read_left = ".mck-msg-avator-bubble .mck-msg-left-muted  {display:none!important;}"
+                    var bot_answer_delete_read_right = ".mck-msg-avator-bubble .mck-msg-right-muted  {display:none!important;}" 
+                    var background_shadow_remove = ".mck-sidebox {box-shadow: none!important;} .mck-box{box-shadow: 0px!important;}  "
+                   
+
+                    
+                    Kommunicate.customizeWidgetCss(background_loading);                                                          
+                    Kommunicate.customizeWidgetCss(background_eerste_laag);
+                    Kommunicate.customizeWidgetCss(kleur_bot);
+                    Kommunicate.customizeWidgetCss(background_foto_beatle);
+                    Kommunicate.customizeWidgetCss(bot_input_padding);
+                    Kommunicate.customizeWidgetCss(bot_input_background);
+                    Kommunicate.customizeWidgetCss(bot_input_button);
+                    Kommunicate.customizeWidgetCss(bot_avatar);
+                    Kommunicate.customizeWidgetCss(bot_name);
+                    Kommunicate.customizeWidgetCss(bot_answer_bubble);
+                    Kommunicate.customizeWidgetCss(bot_answer_delete_read_left);
+                    Kommunicate.customizeWidgetCss(bot_answer_delete_read_right);
+                    Kommunicate.customizeWidgetCss(background_shadow_remove);
+                    Kommunicate.customizeWidgetCss(user_text_bubble);
+
+
+
+                    document.getElementsByClassName("mck-box-content").innerHTML += `<div class="test"></div>`
+
+                    let message = {};
+                    
+                    let localStorage = window.localStorage;
+                    let user = {};
+                
+                    user = JSON.parse(localStorage.getItem('user'));
+
+                   
+                                
+                    var events = {
+                       'onMessageReceived': function (resp) {
+                           message = resp.message;
+                       if(user.audio === "audioEnabled"){
+                        if(message.message == "The Quarrymen Is a band that I started In high school with some friends last year. Later I met Paul and he joined the band. After that Paul Introduced me to George and George joined the band. It Is going pretty good right now, we got a performance next week!"){
+                           addVideo("https://beatles-experience.herokuapp.com/videos/1957/John_TheQuarrymen.mp4");
+                        
+                       }else if (message.message == "Well I'm 15 years and from Liverpool and I am In a band with some friends called The Quarryman. I go to Quarry Bank High School  and I love writing music and playing the guitar. Right now our band Is playing In local venues and churches." ){
+                       addVideo("https://beatles-experience.herokuapp.com/videos/1957/John_Who.mp4");
+                       }else if (message.message == "I met Paul at St. Peter's, Woolton's Parish Church in Liverpool. I was playin with The Quarrymen there and Paul was then introduced by a mutual friend of us. There Paul showed me some handy guitar tuning techniques and after that we stayed in touch and talked about him joining the band. And he did!" ){
+                           addVideo("https://beatles-experience.herokuapp.com/videos/1957/JohnPaul_Meet.mp4");
+                       }else if (message.message == "Paul Is a friend of mine and the bassist, writer and co-vocalist of my band. He Is around the same age as me. And as for writing songs, he got a couple of good Idea's." ){
+                           addVideo("https://beatles-experience.herokuapp.com/videos/1957/JohnPaul_Who.mp4");
+                       }else if (message.message == "Well, George Is a 14 year old talented guitar player. Paul recommended him to join the band and George aswell wanted to join. But I had my doubts because he Is just simply too young. But after some thought and seeing his guitar skills eventually I agreed." ){
+                           addVideo("https://beatles-experience.herokuapp.com/videos/1957/John_George.mp4");
+                       }else if (message.message == "Beetles? I don't see any beetles here man!" ){
+                           addVideo("https://beatles-experience.herokuapp.com/videos/1957/John_Beatles.mp4");
+                       }
+                      }
+                    }
+                    };
+
+                    
+                     Kommunicate.subscribeToEvents(events);
+
+
+	    		}
+	    	};
+         	var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+          	s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+          	var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+          	window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+        
+    </script>
+     
+<script>
+    var myobj = document.getElementById("demo");
+    myobj.remove();
+</script>
+
+</body>
+</html>
