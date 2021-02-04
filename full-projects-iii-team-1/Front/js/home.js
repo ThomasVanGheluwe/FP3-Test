@@ -22,7 +22,7 @@ function displayAudio(){
 
     audioContainer.innerHTML = `
     <audio id='audio-home' autoplay loop>
-         <source src="https://beatles-experience.herokuapp.com/audio/the-beatles-here-comes-the-sun-2019-mix.mp3"></source>
+         <source src="../audio/the-beatles-here-comes-the-sun-2019-mix.mp3"></source>
     </audio>
     `
     let music = document.getElementById('audio-home');
