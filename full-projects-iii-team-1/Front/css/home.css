@@ -47,6 +47,7 @@ main {
 .home-header-container button{
     margin-top: 1.4%;
     background-color: #53BFA5;
+    border: none;
     font-family: 'Montserrat', sans-serif;
     border-radius: 30px; 
     font-weight: 900;
@@ -121,6 +122,7 @@ main {
 .audio-yes {
     background-color: #53BFA5;
     font-family: 'Montserrat', sans-serif;
+    border: none;
     border-radius: 30px;
     font-weight: 900;
     font-size: 1em;
