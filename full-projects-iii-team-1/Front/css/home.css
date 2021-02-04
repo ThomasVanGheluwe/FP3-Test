@@ -10,7 +10,7 @@ main {
 .imgRoadBeatles {
     position: relative;
     height: 100%;
-    background-image: url(/Front/img/BeatlesRoad.jpg);
+    background-image: url(../img/BeatlesRoad.jpg);
     background-attachment: fixed;
     background-size: cover;
     filter: brightness(35%);
